@@ -2,7 +2,7 @@ git的使用方法介绍
 
 第一步：安装git
 官网下载地址：https://git-scm.com/downloads
-windows：下载安装包安装
+windows：下载安装包直接安装
 linux：sudo apt-get install git
 
 第二步：创建版本库（仓库）
@@ -21,18 +21,29 @@ git config --global user.name "Your Name"
 git config --global user.email "email@example.com"
 
 第四步：添加文件
-可添加单个文件，也可添加整个项目
-git add [filename]
-说明：filename为文件全名，带后缀
+可添加单个文件、多个文件，也可添加整个文件夹
+git add [file1] [file2] [file3] [file4]...
+说明：file为文件全名，带后缀
 例如：git add readme.txt
 
-
 第五步：提交文件
+一次性提交刚才添加的所有文件
 git commit -m [messgae]
 说明：-m表示参数message，后面的双引号内容为本次提交的说明信息
-例如：git commit -m "commit file"
+例如：git commit -m "first commit file"
 
-若不想重复使用add命令添加文件，当文件修改后直接提交，增加参数a，使用如下命令
+若不想重复使用add命令添加文件，当文件修改后直接进行提交，可增加参数a，使用如下命令
 git commit -am [messgae]
 
-第六步：
+第六步：查看状态
+查看当前仓库被修改文件：
+git status
+查看被修改内容
+git diff
+
+
+
+
+
+
+
