@@ -1,0 +1,38 @@
+git的使用方法介绍
+
+第一步：安装git
+官网下载地址：https://git-scm.com/downloads
+windows：下载安装包安装
+linux：sudo apt-get install git
+
+第二步：创建版本库（仓库）
+进入指定目录，右键打开Bash，初始化仓库
+git init
+会生成一个隐藏的.git目录
+
+第三步：配置用户名、邮箱（用于身份验证）
+git config --global user.name [name]
+git config --global user.email [email]
+说明：name 为用户名，email为邮箱，作为后续提交版本的身份验证信息
+      global为全局配置，若不加此参数，设置只对本仓库有效
+	  全局配置成功后，以后提交版本可不再重复配置
+例如：
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+第四步：添加文件
+可添加单个文件，也可添加整个项目
+git add [filename]
+说明：filename为文件全名，带后缀
+例如：git add readme.txt
+
+
+第五步：提交文件
+git commit -m [messgae]
+说明：-m表示参数message，后面的双引号内容为本次提交的说明信息
+例如：git commit -m "commit file"
+
+若不想重复使用add命令添加文件，当文件修改后直接提交，增加参数a，使用如下命令
+git commit -am [messgae]
+
+第六步：
