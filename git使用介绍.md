@@ -1,3 +1,6 @@
+Windows操作系统必备技能
+命令窗口（Command Prompt）或 PowerShell 操作
+
 题外话
 notepad++编辑器下载地址：https://notepad-plus-plus.org/downloads/
 参考资料：
@@ -132,6 +135,8 @@ cd ~/.ssh
 cat id_rsa.pub
 复制公有秘钥内容，登录github账号，点击右上角头像，选择settings->SSH and GPG keys->New SSH key,粘贴秘钥，输入秘钥名
 测试：ssh -T ssh -T git@github.com
+
+
 
 
 
